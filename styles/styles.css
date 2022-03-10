@@ -1,0 +1,267 @@
+html { scroll-behavior: smooth; }
+body { font-family: 'Poppins', sans-serif, serif; }
+
+.nav-brand h1 { 
+  font-weight: 500; 
+  font-size: 27px; 
+  margin: 0; 
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  justify-content: space-between;
+  margin: 0 auto; 
+  padding: 30px 0;
+}
+
+.nav-links-container { display: flex; }
+
+.links-wrapper a { color: #6b6b6b; }
+
+.links-wrapper a:hover { color: #0b0b0b; }
+
+.icon-wrapper { 
+  display: flex;
+  align-items: center;
+}
+
+ .icon-wrapper .responsive-menu { 
+  font-size: 25px;
+  cursor: pointer;
+  padding: 0 10px; 
+  display: none;
+}
+
+.icon-wrapper a { color: #0b0b0b; }
+
+.icon-wrapper a:hover { opacity: 60%; }
+
+.links-wrapper a, .icon-wrapper a { 
+  padding: 0 10px;
+  font-size: 20px; 
+  text-decoration: none; 
+}
+
+a.current { 
+  border-bottom: 1px solid #0b0b0b; 
+  color: #0b0b0b
+}
+
+.burger-container {
+  height: 30px;
+  width: 30px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: none; 
+}
+
+.bar{ 
+  height: 4px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.image-container { 
+  max-width: 430px; 
+  box-shadow: 5px 5px  10px #b5b5b5;
+  border-radius: 5px;
+  margin: 0 auto; 
+}
+
+img { 
+  object-fit: cover;
+  width: 100%; 
+  height: 100%;
+  border-radius: 5px;
+}
+
+.collection-one, .collection-two { 
+  padding: 25px 0; 
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  gap: 50px;
+  margin: auto;
+}
+
+.me-container { 
+  padding: 100px 0;
+  max-width: 500px;
+  margin: 0 auto; 
+}
+
+.contacts { 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 30px; 
+}
+
+.contacts a { 
+  padding: 0 10px 50px; 
+  color: #0b0b0b;
+}
+
+.bottom-nav { 
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.bottom-nav a { 
+  margin: 0 10px; 
+  text-decoration: none; 
+  color: #0b0b0b;
+  border-bottom: 1px solid #0b0b0b;
+}
+
+.bottom-nav a:hover { color: #6b6b6b; }
+
+.about-contact {
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.about-contact h3 { font-weight: 500; }
+
+.about-me { max-width: 800px; }
+
+.about-me h3 { font-size: 30px; }
+
+.about-me p { font-size: 25px; }
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  right: 33px;
+  width: 250px;
+  color: #6b6b6b
+}
+
+.email { font-size: 18px; }
+
+.follow { 
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.follow a { 
+  text-decoration: none; 
+  color: #6b6b6b;
+  padding: 8px 0;
+}
+
+.socials { 
+  display: flex;
+  flex-direction: column;
+}
+
+.follow i { padding-right: 10px; }
+
+.follow a:hover { color: #0b0b0b; }
+
+.blog-container { 
+  max-width: 1200px; 
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; 
+  justify-content: center;
+  gap: 150px; 
+}
+
+.blog-image {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto; 
+  box-shadow: 5px 5px  10px #b5b5b5;
+  border-radius: 5px;
+}
+
+.blog-image img{ 
+  width: 100%;
+}
+
+.blog-wrapper a {
+  text-align: center;
+  text-decoration: none;
+  color: #0b0b0b;
+}
+
+.blog-wrapper a:hover { 
+  text-decoration: line-through;
+  color: #6b6b6b;
+}
+
+.blog-body { 
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog-body p {
+  font-size: 20px;
+  text-align: left; 
+  text-indent: 50px;
+}
+
+.blog-text { margin: 100px 0; }
+
+.more-pages { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.next a, .previous a { 
+  font-size: 20px;
+  color: #0b0b0b;
+  text-decoration: none; 
+}
+
+.next:hover , .previous:hover { border-bottom: 2px solid #0b0b0b; }
+
+#scrollUp {
+  color: #0b0b0b;
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 5px;
+  background-color: #333;
+  opacity: 80%;
+}
+
+#scrollUp i {
+  margin: 0 auto;
+  color: #ffff;
+  position: relative;
+  left: 7px;
+}
+
+.links-wrapper.responsive-links {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  justify-content: space-evenly;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  opacity: 90%;
+}
+
+.responsive-menu.rotate-cross { transform: rotate(45deg); }
